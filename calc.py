@@ -9,9 +9,13 @@ def main():
 
     expression = ''.join(sys.argv[1:]).replace(" ", "")
 
-    print("Unsupported operator.")
-
-    return
+    if '+' in expression:
+        num1, num2 = expression.split('+')
+        result = float(num1) + float(num2)
+        
+    else:
+        print("Unsupported operator.")
+        return
 
     print(result)
 
