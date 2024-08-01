@@ -23,7 +23,7 @@ def main():
         num1, num2 = expression.split('/')
         result = float(num1) / float(num2)
     else:
-        print("Unsupported operator. Use +, -, *")
+        print("Unsupported operator. Use +, -, *, /")
         return
 
     print(result)
